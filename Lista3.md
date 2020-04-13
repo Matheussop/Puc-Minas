@@ -5,40 +5,39 @@ Matricula: 623473
 
 Questão 1. Dê a gramática para as seguintes linguagens:
 
-a) {a $a^nb^n$ | n $\ge 0$}  
+a) {a a<sup>n</sup>b<sup>n</sup> | n &ge; 0$}  
     S → aSb  
 
 ------------------------    
-b) { $a^nb^kc^m$   |  k = n+m ex}  
-    &emsp; $a^nb^kc^m$ = $a^nb^nb^mc^m$   
+b) { a<sup>n</sup>b<sup>k</sup>c<sup>m</sup>   |  k = n+m ex}  
+    &emsp; a<sup>nb<sup>kc<sup>m = a<sup>nb<sup>nb<sup>mc<sup>m   
     S → AB   
-    A → aAb | $\lambda$  
-    B → bBc | $\lambda$  
+    A → aAb | λ
+    B → bBc | λ
 
 ------------------------    
-c) { $a^nb^kc^m$   |  k = 2n+m }  
+c) { a<sup>n</sup>b<sup>k</sup>c<sup>m</sup>   |  k = 2n+m }  
     S →  AB  
-    A → aaAb | $\lambda$  
-    B → bBc | $\lambda$  
+    A → aaAb | λ 
+    B → bBc | λ
 
 ------------------------  
-d) { $a^mb^nc^i$    |  $m > n + i$}  
+d) { a<sup>m</sup>b<sup>n</sup>c<sup>i</sup>    |  $m > n + i$}  
     S → A  
-    A → aB  | $\lambda$  
-    B → aBb | C | $\lambda$  
-    C → aCc | $\lambda$
-
+    A → aB  | λ
+    B → aBb | C | λ
+    C → aCc | λ
 ------------------------    
 e) { w  ∈  { a, b }*  |  w  não contenha o substring aba }  
     S → AB  
-    A → aA | bB | $\lambda$    
-    B → bB | bA | $\lambda$  
+    A → aA | bB | λ  
+    B → bB | bA | λ
 
 ------------------------    
 f) { w  |  w  contenha um número igual de a´s e b´s  }
 
 S → A  
-A → aAB | $\lambda$  
+A → aAB | λ 
 B → bA   
 
 ------------------------
@@ -54,7 +53,7 @@ S  → aaSB  |  λ
 B  → bB  |   λ  
 
 ----------------------
-Resp = {$(aa)^n(b^m)^n$ | $n \ e \ m \ge 0$}
+Resp = {(aa)<sup>n</sup>(b<sup>m</sup>)<sup>n</sup> | n  e  m &ge; 0}
 
 ----------------------
 b)  
@@ -63,7 +62,7 @@ A  → cA  |  c
 
 ----------------------
 
-Resp = {$a^nc^m(bb)^n$ | $n \ge 0$,   $m \ge 1$}
+Resp = {a<sup>n</sup>c<sup>m</sup>(bb)<sup>n</sup> | n &ge; 0,   m &ge; 1}
 
 ----------------------
 
@@ -72,7 +71,7 @@ S  → aS  |  bS  |  A
 A  → cA  |  c  |   λ  
 
 ----------------------
-Resp = {$(a^nb^mc^a)^p$ | $m, \ n \ e \ p \ge 0, a \ge 1$}
+Resp = {(a<sup>n</sup>b<sup>m</sup>c<sup>a</sup>)<sup>p</sup> | m, n  e  p &ge; 0, a &ge; 1}
 
 ----------------------
 
@@ -81,7 +80,7 @@ S  → abSdc  | A
 A  → cdAba  |  λ  
 
 ----------------------
-Resp = {$(ab)^n(((cd)^m \ (ba^m)^A) \ (dc)^n)$ | $n, \ m \ e\ A \ge 0$}
+Resp = { (ab)<sup>n</sup>(((cd)<sup>m</sup> \ (ba<sup>m</sup>)<sup>A</sup>) \ (dc)<sup>n</sup>) | n, m e A &ge; 0}
 
 ----------------------
 e)  
@@ -89,7 +88,7 @@ S →  aA  |  λ
 A →  bS   
 
 ----------------------
-Resp = {$a(b^m)^n$ | $n \ e \ m \ge 0$}
+Resp = {</up>a</sup>(b<sup>^</sup>m)<sup>n</sup> | n  e  m &ge; 0}
 
 ----------------------
 
