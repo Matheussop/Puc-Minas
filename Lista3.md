@@ -5,12 +5,12 @@ Matricula: 623473
 
 Questão 1. Dê a gramática para as seguintes linguagens:
 
-a) {a a<sup>n</sup>b<sup>n</sup> | n &ge; 0$}  
+a) {a a<sup>n</sup>b<sup>n</sup> | n &ge; 0}  
     S → aSb  
 
 ------------------------    
 b) { a<sup>n</sup>b<sup>k</sup>c<sup>m</sup>   |  k = n+m ex}  
-    &emsp; a<sup>nb<sup>kc<sup>m = a<sup>nb<sup>nb<sup>mc<sup>m   
+    &emsp; a<sup>n</sup>b<sup>k</sup>c<sup>m</sup> = a<sup>n</sup>b<sup>n</sup>b<sup>m</sup>c<sup>m</sup>  
     S → AB   
     A → aAb | λ
     B → bBc | λ
@@ -22,11 +22,12 @@ c) { a<sup>n</sup>b<sup>k</sup>c<sup>m</sup>   |  k = 2n+m }
     B → bBc | λ
 
 ------------------------  
-d) { a<sup>m</sup>b<sup>n</sup>c<sup>i</sup>    |  $m > n + i$}  
+d) { a<sup>m</sup>b<sup>n</sup>c<sup>i</sup>    |  $m > n + i}  
     S → A  
     A → aB  | λ
     B → aBb | C | λ
     C → aCc | λ
+    
 ------------------------    
 e) { w  ∈  { a, b }*  |  w  não contenha o substring aba }  
     S → AB  
