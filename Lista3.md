@@ -240,12 +240,25 @@ C →  abc
         C →  abc  
 
     --------------------
-    4.2 Eliminar as variáveis que não são alcançáveis
-        S →  aAbB |  ABC  |  a   
+    4.2 Eliminar as variáveis que não são alcançáveis  
+        S →  AbB |  ABC  |  A   
         A →  aA   |  a  
-        B →  bBcC |  b  
+        B →  bBcC |  b    
         C →  abc  
 
+--------------------
+5.           
+    S →  AB<sub>1</sub> |  AB<sub>3</sub>  |  a   
+    A →  A<sub>1</sub>A   
+    A<sub>1</sub> →  a  
+    B →  B<sub>1</sub>C |  b   
+    B<sub>1</sub> →  B<sub>2</sub>B  
+    B<sub>2</sub> → b  
+    B<sub>3</sub> → BC  
+    C → C<sub>3</sub>C<sub>2</sub>    
+    C<sub>3</sub> → c    
+    C<sub>2</sub> → C<sub>1</sub>C  
+    C<sub>1</sub> → AB  
 --------------------
 b)  
 S →  A  |  ABa |  AbA  
@@ -288,9 +301,17 @@ C →  CB  |  CA  |  bB
             A →  Aa  |  a   
 
        --------------------
-       4.2 Eliminar as variáveis que não são alcançáveis
+       4.2 Eliminar as variáveis que não são alcançáveis  
             S →  A | AbA | Ab | bA | b   
             A →  Aa| a   
+---------------------
+5. 
+    S → A | BA | B | BA  | b   
+    A → AA<sub>1</sub>|  A<sub>1</sub>   
+    A<sub>1</sub> → a  
+    B<sub>1</sub> → B<sub>2</sub>A   
+    B<sub>2</sub> → b  
+
 ---------------------
 c)  
 S →  ABC  
@@ -329,9 +350,16 @@ C →  BaB   |  c
     4.2 Eliminar as variáveis que não são alcançáveis  
     S →  ABC  
     A →  a   
-    B →  b  |  bb  
+    B →  b  
     C →  BaB|  c 
 
+---------------------
+5.     
+    S →  ABC  
+    A →  a   
+    B →  b   
+    C →  C<sub>1</sub>B|  c   
+    C<sub>1</sub> → BA
 ---------------------
 d)  
 S →  ADE  |  ABa |  AbA   
@@ -395,3 +423,14 @@ E →  bcdE  | D
     A →  Aa  | a
 
 ---------------------
+5.  
+    S →  AB | B<sub>1</sub>A<sub>1</sub> | AB<sub>1</sub> | b     
+    A →  AA<sub>1</sub>  | A<sub>1</sub>  
+    A<sub>1</sub> →  a  
+    B → AB<sub>1</sub>    
+    B<sub>1</sub> → b  
+--------------------- 
+
+Questão 6. Prove usando o pumping lemma que as seguintes linguagens não são livres de contexto:
+
+a. { a<sup>n</sup>b<sup>n</sup>a<sup>n</sup>b<sup>n</sup>    |  n > 0 }
