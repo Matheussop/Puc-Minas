@@ -1,4 +1,4 @@
-## Lista 3 da materia de FTC 
+## Lista 4 da materia de FTC 
 5 período Puc Minas  
 Aluno: Matheus Luiz Oliveira Spindula  
 Matricula: 623473   
